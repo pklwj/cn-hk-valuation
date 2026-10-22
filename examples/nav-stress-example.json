@@ -1,0 +1,7 @@
+{
+  "model": "nav",
+  "asset_values": [480.0, 240.0, 80.0],
+  "liabilities": 500.0,
+  "shares": 80.0,
+  "scenario": "stress_-20pct_revaluation"
+}

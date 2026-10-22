@@ -1,0 +1,6 @@
+{
+  "model": "ddm",
+  "dividends_per_share": [2.00, 2.06, 2.12, 2.18, 2.24],
+  "ke": 0.09,
+  "terminal_growth": 0.025
+}

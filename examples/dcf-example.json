@@ -1,0 +1,11 @@
+{
+  "model": "dcf_fcff",
+  "fcff": [1000, 1080, 1150, 1210, 1260],
+  "wacc": 0.085,
+  "terminal_growth": 0.025,
+  "diluted_shares": 1000,
+  "net_debt": 2500,
+  "non_operating_assets": 200,
+  "minority_interest": 50,
+  "preferred_equity": 0
+}

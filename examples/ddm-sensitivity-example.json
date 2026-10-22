@@ -1,0 +1,6 @@
+{
+  "model": "ddm_sensitivity",
+  "dividends_per_share": [2.00, 2.06, 2.12, 2.18, 2.24],
+  "ke_values": [0.065, 0.075, 0.085, 0.09, 0.10],
+  "growth_values": [0.01, 0.02, 0.025, 0.03]
+}

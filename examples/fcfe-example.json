@@ -1,0 +1,7 @@
+{
+  "model": "fcfe",
+  "fcfe": [950, 1010, 1070, 1130, 1190],
+  "ke": 0.105,
+  "terminal_growth": 0.03,
+  "diluted_shares": 500
+}

@@ -1,0 +1,5 @@
+{
+  "model": "normalize_cycle",
+  "values": [8.0, 12.0, 5.0, 10.0, 3.0, 9.0, 4.0, 11.0],
+  "method": "median"
+}

@@ -1,0 +1,7 @@
+{
+  "model": "pev",
+  "embedded_value": 2000.0,
+  "pev_multiple": 0.8,
+  "shares": 100.0,
+  "holdco_discount": 0.15
+}

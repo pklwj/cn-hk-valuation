@@ -1,0 +1,9 @@
+{
+  "model": "residual_income",
+  "bvps": 40.0,
+  "roe_path": [0.12, 0.12, 0.12, 0.12, 0.12],
+  "payout": 0.35,
+  "ke": 0.085,
+  "terminal_roe": 0.105,
+  "terminal_book_growth": 0.04
+}
