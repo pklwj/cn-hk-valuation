@@ -10,6 +10,7 @@ For a stable-growth terminal stage, `TV_n = D_(n+1) / (Ke - g_terminal)`, and `K
 
 - Forecast dividends actually expected to be paid, in the currency and share count they will be paid in. For Chinese banks with interim + final dividend structures, model each tranche's fiscal-year attribution and payment timing, and say which convention you used.
 - Dividend capacity check: payout must be sustainable given regulatory capital (CET1 and buffers), risk-weighted asset growth, and other equity instrument distributions (preferred share dividends and perpetual bond coupons reduce the profit available to common shareholders). Cross-check EPS-implied payout against headline payout.
+- Decide the tax basis before forecasting: gross dividends with a pre-tax Ke, or net dividends after the investor's withholding with an after-tax required return. Mainland A-share holding-period tax and Stock Connect's 20% withholding differ; see `china-market.md` and state which basis the value is on.
 - Payload: `{"model": "ddm", "dividends_per_share": [...], "ke": ..., "terminal_growth": ...}`
 
 ### Residual income / PB-ROE (secondary)

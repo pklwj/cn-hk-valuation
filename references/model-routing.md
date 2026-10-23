@@ -22,6 +22,8 @@ Select based on cash-flow economics and forecastability, not the industry label 
 3. **Life cycle matters.** Mature payers support DDM; growth companies need staged or scenario models; perpetual-growth models applied immediately to a loss-making company are a category error.
 4. **Capital structure and regulatory capital.** For banks and insurers, capital requirements are a reinvestment constraint, not a financing detail. Do not treat "net income minus a loosely defined change in equity" as distributable.
 5. **Data quality gates everything.** If the disclosures do not support the model's inputs, the routing answer is "insufficient basis", not a weaker model with invented inputs.
+6. **Financial entities never take the FCFF-WACC route.** Banks and insurers discount equity flows (DDM / residual income / FCFE) at Ke; regulatory capital is a reinvestment constraint, not a financing detail. `ke_wacc.py`'s `wacc` refuses financial entity types unless a documented override is supplied.
+7. **Reverse solvers are diagnostics, not routers.** `reverse_dcf_growth`, `reverse_dcf_wacc`, `reverse_dcf_fcff_scale` and `reverse_ddm_ke` tell you what the current price implies under a chosen forecast. Use them to test whether the market's implied assumptions are defensible - never to reverse-engineer a target price.
 
 ## Cyclical specifics
 

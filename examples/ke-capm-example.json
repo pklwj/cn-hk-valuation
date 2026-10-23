@@ -1,0 +1,12 @@
+{
+  "model": "capm_ke",
+  "_note": "Synthetic shape example - refresh every input with dated sources before any real use. Bare numbers are accepted but produce provenance warnings; dict form requires a non-empty source.",
+  "risk_free_rate": {"value": 0.021, "source": "CN 10Y CGB yield, SSE", "as_of": "2026-10-22", "currency": "CNY"},
+  "beta": {"value": 0.95, "source": "exchange 250-week regression vs CSI300", "as_of": "2026-10-22", "window": "5y weekly", "frequency": "weekly", "standard_error": 0.08, "r_squared": 0.42},
+  "equity_risk_premium": {"value": 0.062, "source": "documented historical ERP study", "as_of": "2026-09-30", "method": "historical", "market": "A-share"},
+  "country_risk_premium": 0.0,
+  "size_premium": 0.0,
+  "company_specific_premium": 0.0,
+  "erp_includes_country_risk": false,
+  "currency": "CNY"
+}

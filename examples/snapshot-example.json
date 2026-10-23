@@ -1,0 +1,174 @@
+{
+  "snapshot_version": 1,
+  "illustrative": true,
+  "identifier": {
+    "ticker": "000000.SZ",
+    "name": "示例公司 (illustrative, not a real issuer)",
+    "market": "A",
+    "currency": "CNY",
+    "unit": "million"
+  },
+  "period": {
+    "label": "2026H1",
+    "end": "2026-06-30"
+  },
+  "retrieved_at": "2026-10-22",
+  "price": {
+    "value": 18.4,
+    "currency": "CNY",
+    "as_of": "2026-10-21",
+    "source": "illustrative only - synthetic price for format demonstration"
+  },
+  "data": {
+    "revenue": {
+      "value": 21500,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, consolidated income statement",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "operating_income": {
+      "value": 3100,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, operating profit line",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "ebitda": {
+      "value": 4620,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, D&A note",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "depreciation_amortisation": {
+      "value": 1520,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, cash-flow supplementary schedule",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "capex": {
+      "value": 1980,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "cash paid for PPE and intangibles",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, investing activities",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "change_in_nwc": {
+      "value": 240,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "increase in operating working capital",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, working-capital schedule",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "fcff_h1": {
+      "value": 1560,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "calculated from the disclosed tax rate and the records above",
+      "status": "calculated",
+      "source_type": "derived",
+      "source": "derived from illustrative 2026 interim report",
+      "formula": "operating_income x (1 - tax_rate) + depreciation_amortisation - capex - change_in_nwc",
+      "input_refs": ["operating_income", "depreciation_amortisation", "capex", "change_in_nwc"],
+      "as_of": "2026-06-30"
+    },
+    "net_debt": {
+      "value": 8900,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "interest-bearing debt less cash and cash equivalents",
+      "status": "calculated",
+      "source_type": "derived",
+      "source": "derived from illustrative 2026 interim balance sheet",
+      "formula": "total_debt - cash_and_equivalents",
+      "input_refs": ["total_debt", "cash_and_equivalents"],
+      "as_of": "2026-06-30"
+    },
+    "total_debt": {
+      "value": 12500,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated, short-term plus long-term borrowings",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim balance sheet",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "cash_and_equivalents": {
+      "value": 3600,
+      "unit": "CNY million",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "consolidated; excludes restricted cash",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim balance sheet",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "diluted_shares": {
+      "value": 1850,
+      "unit": "CNY million shares",
+      "currency": "CNY",
+      "period": "2026H1",
+      "basis": "weighted-average diluted",
+      "status": "fact",
+      "source_type": "annual_report",
+      "source": "illustrative 2026 interim report, earnings per share note",
+      "published_at": "2026-08-28",
+      "as_of": "2026-06-30"
+    },
+    "dividend_per_share": {
+      "value": 0.62,
+      "unit": "CNY/share",
+      "currency": "CNY",
+      "period": "FY2025",
+      "basis": "annual final dividend, gross",
+      "status": "fact",
+      "source_type": "dividend_announcement",
+      "source": "illustrative FY2025 dividend announcement",
+      "published_at": "2026-06-20",
+      "as_of": "2026-06-20"
+    }
+  },
+  "notes": [
+    "All figures are synthetic and exist only to demonstrate the snapshot format.",
+    "Unknown fields should be recorded with status 'unknown' and no value, never omitted silently."
+  ]
+}

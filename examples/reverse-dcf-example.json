@@ -1,0 +1,15 @@
+{
+  "model": "reverse_dcf_growth",
+  "_note": "Synthetic shape example. Solves the terminal growth rate the target price implies under this forecast. Descriptive of market pricing, not independent validation.",
+  "fcff": [1000, 1080, 1150, 1210, 1260],
+  "wacc": 0.085,
+  "terminal_growth_note": "not an input here - it is the unknown being solved",
+  "diluted_shares": 1000,
+  "net_debt": 2500,
+  "non_operating_assets": 200,
+  "minority_interest": 50,
+  "target_price": 25.0,
+  "g_lower": -0.5,
+  "currency": "CNY",
+  "unit": "RMB million (flows) / million shares"
+}

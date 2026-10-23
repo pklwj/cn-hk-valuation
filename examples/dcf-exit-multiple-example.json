@@ -1,0 +1,16 @@
+{
+  "model": "dcf_fcff",
+  "terminal_method": "exit_multiple",
+  "fcff": [1800, 2100, 2250, 2300, 2350],
+  "ebitda": [4200, 4550, 4700, 4820, 4900],
+  "exit_ev_ebitda": 6.0,
+  "wacc": 0.088,
+  "diluted_shares": 5300,
+  "net_debt": 12000,
+  "non_operating_assets": 900,
+  "minority_interest": 700,
+  "preferred_equity": 0,
+  "currency": "CNY",
+  "unit": "million",
+  "as_of": "2026-10-23"
+}

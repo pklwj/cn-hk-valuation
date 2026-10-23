@@ -1,0 +1,31 @@
+{
+  "model": "ke_scenario",
+  "_note": "Synthetic shape example. Each scenario is a full estimate with its own rationale, never a haircut on the base rate. Convention: bear carries the higher Ke.",
+  "bear": {
+    "method": "capm",
+    "inputs": {
+      "risk_free_rate": {"value": 0.026, "source": "CN 10Y CGB yield, SSE", "as_of": "2026-10-22", "currency": "CNY"},
+      "beta": {"value": 1.25, "source": "bottom-up sector beta relevered", "as_of": "2026-10-22"},
+      "equity_risk_premium": {"value": 0.07, "source": "documented historical ERP study", "as_of": "2026-09-30", "method": "historical", "market": "A-share"}
+    },
+    "rationale": "Rate shock plus sector beta re-estimated on a shorter, higher-volatility window"
+  },
+  "base": {
+    "method": "capm",
+    "inputs": {
+      "risk_free_rate": {"value": 0.021, "source": "CN 10Y CGB yield, SSE", "as_of": "2026-10-22", "currency": "CNY"},
+      "beta": {"value": 0.95, "source": "exchange 250-week regression vs CSI300", "as_of": "2026-10-22"},
+      "equity_risk_premium": {"value": 0.062, "source": "documented historical ERP study", "as_of": "2026-09-30", "method": "historical", "market": "A-share"}
+    },
+    "rationale": "Central estimate on the longest stable window"
+  },
+  "bull": {
+    "method": "capm",
+    "inputs": {
+      "risk_free_rate": {"value": 0.018, "source": "CN 10Y CGB yield, SSE", "as_of": "2026-10-22", "currency": "CNY"},
+      "beta": {"value": 0.85, "source": "exchange 250-week regression vs CSI300", "as_of": "2026-10-22"},
+      "equity_risk_premium": {"value": 0.058, "source": "documented historical ERP study", "as_of": "2026-09-30", "method": "historical", "market": "A-share"}
+    },
+    "rationale": "Benign rate path and beta on a calm window"
+  }
+}

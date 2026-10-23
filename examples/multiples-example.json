@@ -1,0 +1,14 @@
+{
+  "model": "comparable_multiples",
+  "_note": "Synthetic shape example. Each multiple names its comparable set and as-of date; a bare number only triggers a provenance warning. Cross-check only - never averaged with intrinsic-model outputs.",
+  "per_share_metrics": {"eps": 1.5, "bvps": 10.0},
+  "entity_metrics": {"ebitda": 1000, "net_debt": 2000, "shares": 100},
+  "multiples": {
+    "pe": {"value": 10, "comparable_set": "A-share media peers, median", "as_of": "2026-10-22"},
+    "pb": {"value": 1.2, "comparable_set": "A-share media peers, median", "as_of": "2026-10-22"},
+    "ev_ebitda": {"value": 8, "comparable_set": "A-share media peers, median", "as_of": "2026-10-22"}
+  },
+  "normalization_note": "EPS normalized for mid-cycle advertising demand",
+  "currency": "CNY",
+  "unit": "RMB million / RMB per share"
+}

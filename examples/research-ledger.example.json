@@ -1,0 +1,54 @@
+{
+  "security": {
+    "ticker": "EXAMPLE",
+    "market": "A-share",
+    "currency": "CNY",
+    "valuation_date": "2026-10-23"
+  },
+  "data": [
+    {
+      "name": "operating_cash_flow",
+      "value": 1280,
+      "unit": "million CNY",
+      "currency": "CNY",
+      "period": "FY2025",
+      "status": "fact",
+      "source_type": "official_filing",
+      "source": "PLACEHOLDER: replace with the actual annual-report URL/filename and page",
+      "published_at": "2026-03-28",
+      "as_of": "2026-10-23"
+    },
+    {
+      "name": "terminal_growth",
+      "value": 0.02,
+      "unit": "decimal per year",
+      "currency": "N/A",
+      "period": "perpetuity",
+      "status": "assumption",
+      "rationale": "PLACEHOLDER: must be argued from pricing power, reinvestment runway and long-run nominal growth",
+      "source": "PLACEHOLDER, not a verified conclusion",
+      "as_of": "2026-10-23"
+    },
+    {
+      "name": "equity_risk_premium",
+      "value": 0.0518,
+      "unit": "decimal",
+      "currency": "CNY",
+      "period": "2026-07 update",
+      "status": "fact",
+      "source_type": "research_provider",
+      "source": "PLACEHOLDER: Damodaran country ERP page, China, with retrieval date",
+      "as_of": "2026-10-23"
+    },
+    {
+      "name": "holdco_discount",
+      "status": "unknown",
+      "unit": "decimal",
+      "currency": "N/A",
+      "period": "n/a",
+      "as_of": "2026-10-23",
+      "source_type": "none",
+      "source": "no defensible estimate located yet"
+    }
+  ]
+}

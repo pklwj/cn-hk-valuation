@@ -1,5 +1,10 @@
 # Ke, discount rates and uncertainty
 
+Conceptual separation of rates and the discipline around them. The executable
+estimation method - CAPM, build-up, bottom-up beta, WACC, scenarios,
+provenance rules and limitations - lives in `ke-wacc-estimation.md` with
+`scripts/ke_wacc.py`.
+
 ## Keep three rates conceptually separate
 
 1. **Model-estimated cost of equity (Ke):** a candidate estimate of required return, with method and inputs disclosed.

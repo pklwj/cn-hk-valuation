@@ -1,0 +1,12 @@
+{
+  "model": "wacc",
+  "_note": "Synthetic shape example for a non-financial entity. Banks/insurers are refused WACC unless a documented override is supplied. Market-value weights are the default; book weights need a rationale.",
+  "cost_of_equity": {"value": 0.092, "source": "capm_ke output, base scenario", "as_of": "2026-10-22"},
+  "cost_of_debt": {"basis": "observed", "value": 0.038, "source": "issuer 3Y bond yield, exchange", "as_of": "2026-10-22"},
+  "tax_rate": 0.25,
+  "weight_equity": 0.75,
+  "weight_debt": 0.25,
+  "weight_basis": "market",
+  "entity_type": "consumer_manufacturing",
+  "currency": "CNY"
+}

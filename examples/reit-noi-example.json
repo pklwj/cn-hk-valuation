@@ -1,0 +1,12 @@
+{
+  "model": "reit_noi",
+  "_note": "Synthetic shape example. Property-level cap-rate valuation: NOI / property cap rate, then the nav() equity bridge. The cap rate here must be a PROPERTY (NOI-based) rate - do not feed it into affo(), which capitalises an equity-level AFFO.",
+  "noi": 100,
+  "property_cap_rate": 0.05,
+  "liabilities": 500,
+  "shares": 100,
+  "other_assets": 0,
+  "scenario": "base",
+  "currency": "CNY",
+  "unit": "RMB million"
+}

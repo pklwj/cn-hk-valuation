@@ -28,11 +28,29 @@ For every material input, identify [Fact], [Calculated], or [Assumption], as wel
 | Base | | | | |
 | Bull | | | | |
 
-Show sufficient intermediate calculations to reproduce the base case. For FCFF, show terminal value share of enterprise value and the equity bridge. For DDM, show dividends forecast for each explicit year and terminal value. For RI, show the ROE path and book-value roll-forward. For P/EV, show the EV source and multiple evidence. For NAV, show asset-by-asset values with bases. For AFFO, show the FFO-to-AFFO bridge and cap-rate/multiple evidence.
+Show sufficient intermediate calculations to reproduce the base case. For FCFF, show the terminal value share of enterprise value, the terminal method (Gordon growth with its `g`, or the exit multiple with the comparable basis and the implied perpetuity growth it back-solves to), and the equity bridge. For DDM, show dividends forecast for each explicit year and terminal value. For RI, show the ROE path and book-value roll-forward. For P/EV, show the EV source and multiple evidence. For NAV, show asset-by-asset values with bases. For AFFO, show the FFO-to-AFFO bridge and cap-rate/multiple evidence.
 
-## 5. Sensitivity and reverse valuation
+## 5. Sensitivity, reverse valuation and parameters
 
 Show Ke/WACC (or cap rate / EV multiple) x terminal-growth sensitivity where applicable, plus any single-variable sensitivity the primary model needs. State which parameters are held constant. If the conclusion changes under reasonable inputs, report "sensitive to assumptions" rather than selecting the favorable result. Report break-even parameters explicitly. Reverse-solved Ke, cap rate or multiple is descriptive of current market pricing, not independent validation.
+
+Include the reverse-solver results (`reverse_dcf_growth`, `reverse_dcf_wacc`, `reverse_dcf_fcff_scale`, `reverse_ddm_ke`) beside the defensible range.
+
+## 5a. Cost-of-capital audit trail
+
+Per the Ke/WACC module output, for each scenario (bear/base/bull):
+
+- the estimate and the formula;
+- every key input with source and as-of date (risk-free rate and tenor; ERP method, market and source; beta window, frequency, standard error, R-squared; cost of debt basis; weights and their basis; tax rate);
+- intermediate results (beta x ERP, unlevered/relevered betas, WACC legs);
+- the parameter with the largest valuation impact and why;
+- warnings: provenance gaps, beta reliability, possible premium double counting, assumption-driven debt cost.
+
+## 5b. Margin of safety and target return (kept separate)
+
+- Intrinsic value range from the models above (at the company's estimated Ke/WACC).
+- Buy price at the investor's required return, labelled "buy price at a X% required return" - never relabelled as intrinsic value.
+- The margin of safety applied once, at the decision layer, with its size and reason. It must not be baked into Ke/WACC and must not be counted twice.
 
 ## 6. Model divergence diagnosis
 

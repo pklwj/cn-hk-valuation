@@ -27,8 +27,18 @@ State the covenant thresholds you used and their source; do not assume covenants
 - For mainland public REITs and Hong Kong REITs, distributable income follows fund-level rules; use the fund's disclosed distributable amount, not a recomputed accounting figure, unless you can reconcile the difference.
 - Payload: `{"model": "affo", "affo_per_share": ..., "cap_rate": ...}` or `{"model": "affo", "affo_per_share": ..., "multiple": ...}` (exactly one method).
 
+## REITs: property-level NOI / cap rate (a different basis)
+
+`Property value = NOI / property cap rate`, then the nav() equity bridge.
+
+- Use `reit_noi`: `{"model": "reit_noi", "noi": ..., "property_cap_rate": ..., "liabilities": ..., "shares": ..., "other_assets": ..., "scenario": ...}`.
+- **The two cap-rate bases are not interchangeable.** The property cap rate is applied to property-level NOI; the AFFO method capitalises an equity-level distributable figure (after interest, maintenance capex and fund-level items). Feeding a property cap rate into `affo()`, or an equity AFFO into `reit_noi`, is a口径 error.
+- Run base and stress scenarios on the property cap rate; a negative stressed NAV is legitimate output.
+- Cross-check the two methods and report the gap and its cause (cap-rate basis, leverage, lease duration, occupancy), never the average.
+
 ## When to refuse
 
 - Assets cannot be reliably revalued (no comparables, no appraisal, opaque related-party transfers).
 - Liabilities are not disclosed in enough detail to model maturities and covenants.
 - The fund/REIT's distributable figure cannot be reconciled to disclosed financials.
+- The cap rate on offer is of unknown basis (property NOI vs equity AFFO) - identify the basis before computing.
